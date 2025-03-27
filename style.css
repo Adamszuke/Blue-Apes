@@ -1,8 +1,51 @@
-body {
-    background-color: #001233;
+ 
+:root
+{
+    --dark-bgc: #001233;
+    /* Cor do background Dark */
+    --light-bgc: #8ecae6;
+    /* Cor do background Light */
+    
+    --dark-fc: #000814;
+    /* Cor da fonte Dark */
+    --light-fc: #caf0f8;
+    /* Cor da fonte Light */
+}
+
+
+* {
+    background-color: var(--light-bgc);
+    /* Declara que se trata de uma variável */
     font-family: Poppins, sans-serif;
 }
 
-#tittle{
-    color: aliceblue;
+body{
+    margin: 0;
 }
+.header{
+    background-color: beige;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.header a{
+    text-decoration: none;
+    background-color: rgba(255, 0, 0, 0);
+    color: var(--dark-fc);
+    /* Declara que se trata de uma variável */
+    float: left;
+    text-align: center;
+    font-size: 45px;
+    line-height: 65px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+
+.header a:hover {
+    background-color: #a8c6cc;
+    transition: 0.2s;
+}
+
+ 
